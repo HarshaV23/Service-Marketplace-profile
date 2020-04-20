@@ -12,6 +12,7 @@ public class Profile {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	Integer profileId;
+	
 	Integer customerId;
 	Integer serviceId;
 	String timestamp;
