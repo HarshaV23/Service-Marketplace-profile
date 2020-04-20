@@ -27,10 +27,6 @@ public class ProfileController{
 	
 	@RequestMapping(method=RequestMethod.POST,value="/addtransaction")
 	String addTrasaction(@RequestBody Profile profile) {
-		long mills = System.currentTimeMillis();
-		
-		
-		profile.setTimestamp(""+new Date(mills));
 		return service.addTransaction(profile);
 	}
 	
